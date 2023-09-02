@@ -18,7 +18,7 @@ async function checkStatus() {
       const $ = load(body);
       const batteryLevel = parseInt($("#batterylevel").val());
       console.log("value of charging", batteryLevel);
-      if (batteryLevel < 70) {
+      if (batteryLevel < 25) {
         notifier.notify({
           title: `Jio Fi battery status - ${$("#batterylevel").val()}`,
           message: "🛑🛑 Please charge your jiofi🛑🛑 ",
